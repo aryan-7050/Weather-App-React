@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+}
+
+/* Main container */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/* 🔲 COMMON SIZE FOR BOTH BOXES */
+.searchBox,
+.infoBox {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 420px; /* SAME WIDTH */
+}
+
+/* Headings */
+.searchBox h1,
+.infoBox h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Weather card inside InfoBox */
+.weatherCard {
+  max-width: 100%;
+  border-radius: 14px !important;
+  margin: auto;
+}
+
+/* Weather text */
+.weatherDetails {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 8px;
+  text-align: left;
+}
+
+/* ℹ️ Empty State */
+.emptyState {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* ⏳ Loader */
+.loader {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 17px;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 480px) {
+  .searchBox,
+  .infoBox {
+    padding: 18px;
+  }
+}
