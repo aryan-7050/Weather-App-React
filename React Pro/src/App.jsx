@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-const API_KEY = "74ac50378f2d528c6a5bbea27b9f14b1";
+  const API_KEY = "74ac50378f2d528c6a5bbea27b9f14b1";
   const getWeather = async (city) => {
     setLoading(true);
     setWeatherInfo(null);
